@@ -94,3 +94,15 @@ pipenv run python src/experiments_run_evidence_alignment.py
 ```bash
 pipenv run python src/experiments_run_non_verifiable.py
 ```
+
+# Reference
+
+If you find this project useful, please consider citing the following paper:
+
+```bibtext
+@article{wang2025biodsa,
+title = {BioDSA-1K: Benchmarking Data Science Agents for Biomedical Research},
+author = {Wang, Zifeng and Danek, Benjamin and Sun, Jimeng},
+year = {2025}
+}
+```
