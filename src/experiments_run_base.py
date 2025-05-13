@@ -1,5 +1,3 @@
-import dotenv
-dotenv.load_dotenv()
 import docker
 import json
 import os
@@ -25,7 +23,7 @@ import time
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from src import (
     REPO_ROOT,
-    TOP_LEVEL_LOG_DIR
+    TOP_LEVEL_LOG_DIR,
 )
 
 num_threads = 1

@@ -3,3 +3,5 @@
 __pycache__
 trash
 .DS_Store
+*_experiments.json
+benchmark_datasets/cBioPortal

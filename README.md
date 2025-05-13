@@ -27,6 +27,7 @@ There are many ways to install docker, but the easiest way is to use the officia
 sudo apt-get update -y
 
 # Install Docker
+sudo apt-get install -y containerd
 sudo apt-get install -y docker.io
 
 # Start Docker service

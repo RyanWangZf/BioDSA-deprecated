@@ -91,7 +91,7 @@ class DatasetLoader:
     def load_dataset_metadata(self):
 
         if (not os.path.exists(self.dataset_metadata_directory_path)):
-            raise Exception("Dataset metadata directory not found")
+            raise Exception("Dataset metadata directory not found at: " + self.dataset_metadata_directory_path)
     
         for file in os.listdir(self.dataset_metadata_directory_path):            
             if (file.endswith(".json")):

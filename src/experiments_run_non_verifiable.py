@@ -61,7 +61,7 @@ PLACEHOLDER_PATH = "/workdir"
 DATAHUB_PATH = os.path.join(BASE_DATASET_PATH, "datahub/public")
 
 # for logger
-LOG_DIR = os.path.join(TOP_LEVEL_LOG_DIR, "experiment_logs")
+LOG_DIR = os.path.join(TOP_LEVEL_LOG_DIR, "experiment_logs_non-verifiable")
 os.makedirs(LOG_DIR, exist_ok=True)
 
 def get_experiment_log_pattern(pmid: str, hypothesis_index: int, is_true: bool, experiment_config: dict) -> str:

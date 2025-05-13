@@ -16,11 +16,11 @@ from src import (
 from src.evaluate import llm_evaluate_evidence_alignment
 from src.utils.hypothesis import HypothesisLoader
 
-LOG_DIR = os.path.join(TOP_LEVEL_LOG_DIR, "experiment_logs_non-verifiable")
+LOG_DIR = os.path.join(TOP_LEVEL_LOG_DIR, "experiment_logs")
 if not os.path.exists(LOG_DIR):
     os.makedirs(LOG_DIR)
 
-OUTPUT_DIR = os.path.join(REPO_ROOT, "eval_evidence_alignment_2_NV")
+OUTPUT_DIR = os.path.join(TOP_LEVEL_LOG_DIR, "eval_evidence_alignment")
 COMPLETED_TASKS_FILE = os.path.join(OUTPUT_DIR, "completed_tasks.txt")
 EVAL_RESULTS_FILE = os.path.join(OUTPUT_DIR, "eval_results.json")
 
@@ -81,11 +81,12 @@ This file contains lines of the task_id that have been completed.
 """
 # load the completed tasks
 completed_tasks = []
-with open(COMPLETED_TASKS_FILE, "r") as f:
-    completed_tasks = f.readlines()
+if (os.path.exists(COMPLETED_TASKS_FILE)):
+    with open(COMPLETED_TASKS_FILE, "r") as f:
+        completed_tasks = f.readlines()
     
-completed_tasks = [line.strip() for line in completed_tasks]
-    
+    completed_tasks = [line.strip() for line in completed_tasks]
+
 completed_tasks = set(completed_tasks)
 
 eval_results = []
