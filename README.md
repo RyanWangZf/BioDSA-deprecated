@@ -3,6 +3,11 @@
 ## Abstract
 Validating scientific hypotheses is a central challenge in biomedical research, and remains difficult for artificial intelligence (AI) agents due to the complexity of real-world data analysis and evidence interpretation. In this work, we present BIOPDDSA-1K, a benchmark designed to evaluate AI agents on realistic, data-driven biomedical hypothesis validation tasks. BIOPDDSA-1K consists of 1,029 hypothesis-centric tasks paired with 1,177 analysis plans, curated from over 300 published biomedical studies to reflect the structure and reasoning found in authentic research workflows. Each task includes a structured hypothesis derived from the original study's conclusions, expressed in the affirmative to reflect the language of scientific reporting, and one or more pieces of supporting evidence grounded in empirical data tables. While these hypotheses mirror published claims, they remain testable using standard statistical or machine learning methods. The benchmark enables evaluation along four axes: (1) hypothesis decision accuracy, (2) alignment between evidence and conclusion, (3) correctness of the reasoning process, and (4) executability of the AI-generated analysis code. Importantly, BIOPDDSA-1K includes non-verifiable hypotheses: cases where the available data are insufficient to support or refute a claim, reflecting a common yet underexplored scenario in real-world science. We propose BIOPDDSA-1K as a foundation for building and evaluating generalizable, trustworthy AI agents for biomedical discovery.
 
+## Benchmark data
+
+The benchmark data is available at: https://huggingface.co/datasets/zifeng-ai/BioDSA-1K.
+
+
 ## About This Repository
 The repository contains the code and data for the paper "BIODSA-1K: Benchmarking Data Science Agents for Biomedical Research". The repository is organized into several directories:
 - `benchmark_datasets` contains the code to generate the benchmark datasets from scratch, and also serves as the location for the benchmark datasets.
