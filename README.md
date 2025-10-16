@@ -1,4 +1,4 @@
-[10/16/2025] Please check https://github.com/RyanWangZf/BioDSA-Bench for the up-to-date code.
+[10/16/2025] Please check https://github.com/RyanWangZf/BioDSA for the up-to-date code.
 
 ======
 # BIODSA-1K: Benchmarking Data Science Agents for Biomedical Research
